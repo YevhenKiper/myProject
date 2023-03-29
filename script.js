@@ -1,5 +1,17 @@
-// eslint-disable-next-line no-unused-vars
-let incr = 10,
-    decr = 10;
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
 
-console.log(decr--)
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+}
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b
+personalMovieDB.movies[c] = d
